@@ -1,31 +1,10 @@
 # This is a basic workflow to help you get started with Actions
 name: TEST
 
-# on:
-#   workflow_dispatch:
-#      inputs: 
-#         param1:
-#           description: 'param1 identifier'
-#           required: false
-#         param2:
-#           description: 'param2 identifier'
-#           required: false
-
-# Controls when the workflow will run
-# on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  #push:
-  #  branches: [ main ]
-# on:
-  #pull_request:
-  #  branches: [ main ]
 
 on:
   repository_dispatch:
     types: [test_result]
-# on:
-#   schedule:
-#     - cron: "*/2 * * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
